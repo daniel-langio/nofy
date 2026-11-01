@@ -1,0 +1,2604 @@
+{
+  "nori": {
+    "stand": {
+      "pose": {
+        "facing": "left",
+        "look": "ahead",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 0,
+          "rot": 0
+        },
+        "spine": 0,
+        "neck": 0,
+        "seat": "none",
+        "armL": {
+          "a": -12,
+          "b": -8,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 10,
+          "b": -12,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -2,
+          "b": 1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 3,
+          "b": -1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0.07188347879798584,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ]
+      ]
+    },
+    "think": {
+      "pose": {
+        "facing": "left",
+        "look": "up",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 0,
+          "rot": 0
+        },
+        "spine": 0,
+        "neck": -6,
+        "seat": "none",
+        "armL": {
+          "a": -4,
+          "b": -12,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": -51.60125687074371,
+          "b": -139.23254356457934,
+          "s1": 1,
+          "s2": 1,
+          "hand": "fist",
+          "layer": "front",
+          "bend": 1,
+          "wrist": -10,
+          "fingers": {
+            "spread": 7,
+            "curl": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "thumb": 20,
+            "tcurl": 0.55
+          }
+        },
+        "legL": {
+          "a": -2,
+          "b": 1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 3,
+          "b": -1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0.07188347879798584,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ]
+      ]
+    },
+    "sit": {
+      "pose": {
+        "facing": "left",
+        "look": "back",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 71,
+          "rot": 0
+        },
+        "spine": 3,
+        "neck": -6,
+        "seat": "chair",
+        "armL": {
+          "a": 5.840939239636797,
+          "b": -14.050521423207783,
+          "s1": 1,
+          "s2": 1,
+          "hand": "clasp",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": -12.875336613537536,
+          "b": -22.89969061879836,
+          "s1": 1,
+          "s2": 1,
+          "hand": "clasp",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -55,
+          "b": 57,
+          "s1": 0.45,
+          "s2": 1,
+          "foot": 4,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": -70,
+          "b": 66,
+          "s1": 0.62,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ]
+      ]
+    },
+    "lean": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "pout",
+        "root": {
+          "x": 0,
+          "y": 16,
+          "rot": 0
+        },
+        "spine": -22,
+        "neck": -10,
+        "seat": "none",
+        "armL": {
+          "a": -2.416672421744183,
+          "b": -15.70866098411031,
+          "s1": 1,
+          "s2": 1,
+          "hand": "open",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 21,
+            "curl": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "thumb": 64,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": -14.458344989180265,
+          "b": 21.13218450853168,
+          "s1": 1,
+          "s2": 1,
+          "hand": "hidden",
+          "layer": "front",
+          "bend": -1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -24,
+          "b": 3,
+          "s1": 1,
+          "s2": 1,
+          "foot": -6,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 24,
+          "b": -3,
+          "s1": 1,
+          "s2": 1,
+          "foot": 6,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": -1.6762177137895833,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armR bends backward on purpose"
+        ]
+      ]
+    },
+    "walk": {
+      "pose": {
+        "facing": "left",
+        "look": "ahead",
+        "expr": "sip",
+        "root": {
+          "x": 0,
+          "y": 15,
+          "rot": 0
+        },
+        "spine": -3,
+        "neck": 0,
+        "seat": "none",
+        "armL": {
+          "a": -20,
+          "b": -8,
+          "s1": 1,
+          "s2": 1,
+          "hand": "bag",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": -63.48495827806225,
+          "b": -110.17362048586801,
+          "s1": 1,
+          "s2": 1,
+          "hand": "cup",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -26,
+          "b": 6,
+          "s1": 1,
+          "s2": 1,
+          "foot": -4,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 20,
+          "b": 30,
+          "s1": 1,
+          "s2": 1,
+          "foot": -4,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0.16284448927558515,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "legR foot lifted 23px"
+        ]
+      ]
+    },
+    "laugh": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "laugh",
+        "root": {
+          "x": 10,
+          "y": 22,
+          "rot": 0
+        },
+        "spine": 5,
+        "neck": 9,
+        "seat": "step",
+        "armL": {
+          "a": -10.81955678273836,
+          "b": 148.62682615195908,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "front",
+          "bend": -1,
+          "wrist": -20,
+          "fingers": {
+            "spread": 9,
+            "curl": [
+              0.5,
+              0.58,
+              0.64,
+              0.7
+            ],
+            "thumb": 36,
+            "tcurl": 0.3
+          }
+        },
+        "armR": {
+          "a": -42.1483190403161,
+          "b": -9.912250022610607,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "front",
+          "bend": 1,
+          "wrist": 10,
+          "fingers": {
+            "spread": 8,
+            "curl": [
+              0.3,
+              0.38,
+              0.45,
+              0.5
+            ],
+            "thumb": 24,
+            "tcurl": 0.2
+          }
+        },
+        "legL": {
+          "a": 105.6,
+          "b": -108.6,
+          "s1": 0.7,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": 1
+        },
+        "legR": {
+          "a": -105.6,
+          "b": 108.6,
+          "s1": 0.9,
+          "s2": 1,
+          "foot": 0,
+          "layer": "front",
+          "bend": -1
+        }
+      },
+      "placementDy": 0,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armL bends backward on purpose"
+        ],
+        [
+          "info",
+          "legL bends backward (twisted leg, shoe flipped) on purpose"
+        ]
+      ]
+    },
+    "crouch": {
+      "pose": {
+        "facing": "left",
+        "look": "ahead",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 49,
+          "rot": 0
+        },
+        "spine": -12,
+        "neck": 8,
+        "seat": "none",
+        "armL": {
+          "a": 30,
+          "b": -10,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 35,
+          "b": -12,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -45,
+          "b": 85,
+          "s1": 1,
+          "s2": 1,
+          "foot": 34,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": -45,
+          "b": 85,
+          "s1": 1,
+          "s2": 1,
+          "foot": 34,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0.34876702033204765,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ]
+      ]
+    },
+    "wave": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 0,
+          "rot": 0
+        },
+        "spine": 2,
+        "neck": -4,
+        "seat": "none",
+        "armL": {
+          "a": -12,
+          "b": -8,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 150,
+          "b": 30,
+          "s1": 1,
+          "s2": 1,
+          "hand": "wave",
+          "layer": "front",
+          "bend": -1,
+          "fingers": {
+            "spread": 16,
+            "curl": [
+              0,
+              0,
+              0.05,
+              0.1
+            ],
+            "thumb": 55,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -2,
+          "b": 1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 3,
+          "b": -1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0.07188347879798584,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armR bends backward on purpose"
+        ]
+      ]
+    },
+    "glide": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "calm",
+        "root": {
+          "x": 20,
+          "y": -150,
+          "rot": -78
+        },
+        "spine": 0,
+        "neck": 44,
+        "seat": "none",
+        "armL": {
+          "a": -6,
+          "b": -6,
+          "s1": 1,
+          "s2": 1,
+          "hand": "open",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 21,
+            "curl": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "thumb": 64,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 172,
+          "b": 4,
+          "s1": 1,
+          "s2": 1,
+          "hand": "open",
+          "layer": "front",
+          "bend": -1,
+          "fingers": {
+            "spread": 21,
+            "curl": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "thumb": 64,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": 4,
+          "b": -2,
+          "s1": 1,
+          "s2": 1,
+          "foot": -50,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": -12,
+          "b": 72,
+          "s1": 1,
+          "s2": 1,
+          "foot": -30,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armR bends backward on purpose"
+        ],
+        [
+          "info",
+          "Airborne or lying: ground contact not checked"
+        ]
+      ]
+    },
+    "jump": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "joy",
+        "root": {
+          "x": 0,
+          "y": -110,
+          "rot": 0
+        },
+        "spine": 6,
+        "neck": -4,
+        "seat": "none",
+        "armL": {
+          "a": -158,
+          "b": -6,
+          "s1": 1,
+          "s2": 1,
+          "hand": "open",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 21,
+            "curl": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "thumb": 64,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 114,
+          "b": 8,
+          "s1": 1,
+          "s2": 1,
+          "hand": "wave",
+          "layer": "front",
+          "bend": -1,
+          "fingers": {
+            "spread": 16,
+            "curl": [
+              0,
+              0,
+              0.05,
+              0.1
+            ],
+            "thumb": 55,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -14,
+          "b": 118,
+          "s1": 1,
+          "s2": 1,
+          "foot": -10,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 2,
+          "b": 112,
+          "s1": 1,
+          "s2": 1,
+          "foot": -10,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armR bends backward on purpose"
+        ],
+        [
+          "info",
+          "Airborne or lying: ground contact not checked"
+        ]
+      ]
+    }
+  },
+  "bastien": {
+    "stand": {
+      "pose": {
+        "facing": "left",
+        "look": "ahead",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 0,
+          "rot": 0
+        },
+        "spine": -5,
+        "neck": 3,
+        "seat": "none",
+        "armL": {
+          "a": -12,
+          "b": -8,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 10,
+          "b": -12,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -2,
+          "b": 1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 3,
+          "b": -1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0.06018717199049206,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ]
+      ]
+    },
+    "think": {
+      "pose": {
+        "facing": "left",
+        "look": "up",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 0,
+          "rot": 0
+        },
+        "spine": -5,
+        "neck": -3,
+        "seat": "none",
+        "armL": {
+          "a": -4,
+          "b": -12,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": -53.76456130051817,
+          "b": -139.07407509032296,
+          "s1": 1,
+          "s2": 1,
+          "hand": "fist",
+          "layer": "front",
+          "bend": 1,
+          "wrist": -10,
+          "fingers": {
+            "spread": 7,
+            "curl": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "thumb": 20,
+            "tcurl": 0.55
+          }
+        },
+        "legL": {
+          "a": -2,
+          "b": 1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 3,
+          "b": -1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0.06018717199049206,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ]
+      ]
+    },
+    "sit": {
+      "pose": {
+        "facing": "left",
+        "look": "back",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 71,
+          "rot": 0
+        },
+        "spine": -2,
+        "neck": -3,
+        "seat": "chair",
+        "armL": {
+          "a": 5.741687589974397,
+          "b": -14.043251714630742,
+          "s1": 1,
+          "s2": 1,
+          "hand": "clasp",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": -13.038462707552155,
+          "b": -22.88774240817162,
+          "s1": 1,
+          "s2": 1,
+          "hand": "clasp",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -55,
+          "b": 57,
+          "s1": 0.45,
+          "s2": 1,
+          "foot": 4,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": -70,
+          "b": 66,
+          "s1": 0.62,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": -29.75,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "legL foot lifted 22px"
+        ],
+        [
+          "info",
+          "legR foot lifted 25px"
+        ]
+      ]
+    },
+    "lean": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "pout",
+        "root": {
+          "x": 0,
+          "y": 16,
+          "rot": 0
+        },
+        "spine": -27,
+        "neck": -7,
+        "seat": "none",
+        "armL": {
+          "a": -2.5277770962132404,
+          "b": -15.70052309770432,
+          "s1": 1,
+          "s2": 1,
+          "hand": "open",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 21,
+            "curl": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "thumb": 64,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": -14.308111789620755,
+          "b": 21.121180642118304,
+          "s1": 1,
+          "s2": 1,
+          "hand": "hidden",
+          "layer": "front",
+          "bend": -1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -24,
+          "b": 3,
+          "s1": 1,
+          "s2": 1,
+          "foot": -6,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 24,
+          "b": -3,
+          "s1": 1,
+          "s2": 1,
+          "foot": 6,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": -3.253039933666969,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armR bends backward on purpose"
+        ]
+      ]
+    },
+    "walk": {
+      "pose": {
+        "facing": "left",
+        "look": "ahead",
+        "expr": "sip",
+        "root": {
+          "x": 0,
+          "y": 15,
+          "rot": 0
+        },
+        "spine": -8,
+        "neck": 3,
+        "seat": "none",
+        "armL": {
+          "a": -20,
+          "b": -8,
+          "s1": 1,
+          "s2": 1,
+          "hand": "bag",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": -64.63827276865962,
+          "b": -110.0891431883961,
+          "s1": 1,
+          "s2": 1,
+          "hand": "cup",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -26,
+          "b": 6,
+          "s1": 1,
+          "s2": 1,
+          "foot": -4,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 20,
+          "b": 30,
+          "s1": 1,
+          "s2": 1,
+          "foot": -4,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": -1.5904040744026133,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "legR foot lifted 19px"
+        ]
+      ]
+    },
+    "laugh": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "laugh",
+        "root": {
+          "x": 10,
+          "y": 22,
+          "rot": 0
+        },
+        "spine": 0,
+        "neck": 12,
+        "seat": "step",
+        "armL": {
+          "a": -7.961478589297528,
+          "b": 148.41744687849737,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "front",
+          "bend": -1,
+          "wrist": -20,
+          "fingers": {
+            "spread": 9,
+            "curl": [
+              0.5,
+              0.58,
+              0.64,
+              0.7
+            ],
+            "thumb": 36,
+            "tcurl": 0.3
+          }
+        },
+        "armR": {
+          "a": -42.09970110149937,
+          "b": -10.13682228886617,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "front",
+          "bend": 1,
+          "wrist": 10,
+          "fingers": {
+            "spread": 8,
+            "curl": [
+              0.3,
+              0.38,
+              0.45,
+              0.5
+            ],
+            "thumb": 24,
+            "tcurl": 0.2
+          }
+        },
+        "legL": {
+          "a": 105.6,
+          "b": -108.6,
+          "s1": 0.7,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": 1
+        },
+        "legR": {
+          "a": -105.6,
+          "b": 108.6,
+          "s1": 0.9,
+          "s2": 1,
+          "foot": 0,
+          "layer": "front",
+          "bend": -1
+        }
+      },
+      "placementDy": -31.250000000000057,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armL bends backward on purpose"
+        ],
+        [
+          "info",
+          "legL bends backward (twisted leg, shoe flipped) on purpose"
+        ],
+        [
+          "info",
+          "legL foot lifted 11px"
+        ],
+        [
+          "info",
+          "legR foot lifted 16px"
+        ]
+      ]
+    },
+    "crouch": {
+      "pose": {
+        "facing": "left",
+        "look": "ahead",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 49,
+          "rot": 0
+        },
+        "spine": -17,
+        "neck": 11,
+        "seat": "none",
+        "armL": {
+          "a": 30,
+          "b": -10,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 35,
+          "b": -12,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -45,
+          "b": 85,
+          "s1": 1,
+          "s2": 1,
+          "foot": 34,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": -45,
+          "b": 85,
+          "s1": 1,
+          "s2": 1,
+          "foot": 34,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": -5.396498815728819,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ]
+      ]
+    },
+    "wave": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 0,
+          "rot": 0
+        },
+        "spine": -3,
+        "neck": -1,
+        "seat": "none",
+        "armL": {
+          "a": -12,
+          "b": -8,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 150,
+          "b": 30,
+          "s1": 1,
+          "s2": 1,
+          "hand": "wave",
+          "layer": "front",
+          "bend": -1,
+          "fingers": {
+            "spread": 16,
+            "curl": [
+              0,
+              0,
+              0.05,
+              0.1
+            ],
+            "thumb": 55,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -2,
+          "b": 1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 3,
+          "b": -1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0.06018717199049206,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armR bends backward on purpose"
+        ]
+      ]
+    },
+    "glide": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "calm",
+        "root": {
+          "x": 20,
+          "y": -150,
+          "rot": -78
+        },
+        "spine": -5,
+        "neck": 47,
+        "seat": "none",
+        "armL": {
+          "a": -6,
+          "b": -6,
+          "s1": 1,
+          "s2": 1,
+          "hand": "open",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 21,
+            "curl": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "thumb": 64,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 172,
+          "b": 4,
+          "s1": 1,
+          "s2": 1,
+          "hand": "open",
+          "layer": "front",
+          "bend": -1,
+          "fingers": {
+            "spread": 21,
+            "curl": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "thumb": 64,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": 4,
+          "b": -2,
+          "s1": 1,
+          "s2": 1,
+          "foot": -50,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": -12,
+          "b": 72,
+          "s1": 1,
+          "s2": 1,
+          "foot": -30,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armR bends backward on purpose"
+        ],
+        [
+          "info",
+          "Airborne or lying: ground contact not checked"
+        ]
+      ]
+    },
+    "jump": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "joy",
+        "root": {
+          "x": 0,
+          "y": -110,
+          "rot": 0
+        },
+        "spine": 1,
+        "neck": -1,
+        "seat": "none",
+        "armL": {
+          "a": -158,
+          "b": -6,
+          "s1": 1,
+          "s2": 1,
+          "hand": "open",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 21,
+            "curl": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "thumb": 64,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 114,
+          "b": 8,
+          "s1": 1,
+          "s2": 1,
+          "hand": "wave",
+          "layer": "front",
+          "bend": -1,
+          "fingers": {
+            "spread": 16,
+            "curl": [
+              0,
+              0,
+              0.05,
+              0.1
+            ],
+            "thumb": 55,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -14,
+          "b": 118,
+          "s1": 1,
+          "s2": 1,
+          "foot": -10,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 2,
+          "b": 112,
+          "s1": 1,
+          "s2": 1,
+          "foot": -10,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armR bends backward on purpose"
+        ],
+        [
+          "info",
+          "Airborne or lying: ground contact not checked"
+        ]
+      ]
+    }
+  },
+  "eric": {
+    "stand": {
+      "pose": {
+        "facing": "left",
+        "look": "ahead",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 0,
+          "rot": 0
+        },
+        "spine": 0,
+        "neck": 0,
+        "seat": "none",
+        "armL": {
+          "a": -12,
+          "b": -8,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 10,
+          "b": -12,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -2,
+          "b": 1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 3,
+          "b": -1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0.024525641028276368,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ]
+      ]
+    },
+    "think": {
+      "pose": {
+        "facing": "left",
+        "look": "up",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 0,
+          "rot": 0
+        },
+        "spine": 0,
+        "neck": -6,
+        "seat": "none",
+        "armL": {
+          "a": -4,
+          "b": -12,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": -62.3149533296869,
+          "b": -139.01546916332077,
+          "s1": 1,
+          "s2": 1,
+          "hand": "fist",
+          "layer": "front",
+          "bend": 1,
+          "wrist": -10,
+          "fingers": {
+            "spread": 7,
+            "curl": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "thumb": 20,
+            "tcurl": 0.55
+          }
+        },
+        "legL": {
+          "a": -2,
+          "b": 1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 3,
+          "b": -1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0.024525641028276368,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ]
+      ]
+    },
+    "sit": {
+      "pose": {
+        "facing": "left",
+        "look": "back",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 71,
+          "rot": 0
+        },
+        "spine": 3,
+        "neck": -6,
+        "seat": "chair",
+        "armL": {
+          "a": 5.347722239288517,
+          "b": -14.0405563565036,
+          "s1": 1,
+          "s2": 1,
+          "hand": "clasp",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": -13.685958658787978,
+          "b": -22.883312462620324,
+          "s1": 1,
+          "s2": 1,
+          "hand": "clasp",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -55,
+          "b": 57,
+          "s1": 0.45,
+          "s2": 1,
+          "foot": 4,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": -70,
+          "b": 66,
+          "s1": 0.62,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": -115.10000000000002,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "legL foot lifted 93px"
+        ],
+        [
+          "info",
+          "legR foot lifted 94px"
+        ]
+      ]
+    },
+    "lean": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "pout",
+        "root": {
+          "x": 0,
+          "y": 16,
+          "rot": 0
+        },
+        "spine": -22,
+        "neck": -10,
+        "seat": "none",
+        "armL": {
+          "a": -2.9687903400318163,
+          "b": -15.697505853161744,
+          "s1": 1,
+          "s2": 1,
+          "hand": "open",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 21,
+            "curl": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "thumb": 64,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": -13.711789359542557,
+          "b": 21.117100814797965,
+          "s1": 1,
+          "s2": 1,
+          "hand": "hidden",
+          "layer": "front",
+          "bend": -1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -24,
+          "b": 3,
+          "s1": 1,
+          "s2": 1,
+          "foot": -6,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 24,
+          "b": -3,
+          "s1": 1,
+          "s2": 1,
+          "foot": 6,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": -5.778175687684552,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armR bends backward on purpose"
+        ]
+      ]
+    },
+    "walk": {
+      "pose": {
+        "facing": "left",
+        "look": "ahead",
+        "expr": "sip",
+        "root": {
+          "x": 0,
+          "y": 15,
+          "rot": 0
+        },
+        "spine": -3,
+        "neck": 0,
+        "seat": "none",
+        "armL": {
+          "a": -20,
+          "b": -8,
+          "s1": 1,
+          "s2": 1,
+          "hand": "bag",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": -69.21065911166598,
+          "b": -110.05784437418589,
+          "s1": 1,
+          "s2": 1,
+          "hand": "cup",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -26,
+          "b": 6,
+          "s1": 1,
+          "s2": 1,
+          "foot": -4,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 20,
+          "b": 30,
+          "s1": 1,
+          "s2": 1,
+          "foot": -4,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": -4.808877235495288,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ]
+      ]
+    },
+    "laugh": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "laugh",
+        "root": {
+          "x": 10,
+          "y": 22,
+          "rot": 0
+        },
+        "spine": 5,
+        "neck": 9,
+        "seat": "step",
+        "armL": {
+          "a": 3.299315378836539,
+          "b": 148.3401588044191,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "front",
+          "bend": -1,
+          "wrist": -20,
+          "fingers": {
+            "spread": 9,
+            "curl": [
+              0.5,
+              0.58,
+              0.64,
+              0.7
+            ],
+            "thumb": 36,
+            "tcurl": 0.3
+          }
+        },
+        "armR": {
+          "a": -41.14962241273756,
+          "b": -12.664742714422346,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "front",
+          "bend": 1,
+          "wrist": 10,
+          "fingers": {
+            "spread": 8,
+            "curl": [
+              0.3,
+              0.38,
+              0.45,
+              0.5
+            ],
+            "thumb": 24,
+            "tcurl": 0.2
+          }
+        },
+        "legL": {
+          "a": 105.6,
+          "b": -108.6,
+          "s1": 0.7,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": 1
+        },
+        "legR": {
+          "a": -105.6,
+          "b": 108.6,
+          "s1": 0.9,
+          "s2": 1,
+          "foot": 0,
+          "layer": "front",
+          "bend": -1
+        }
+      },
+      "placementDy": -125.29999999999995,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armL bends backward on purpose"
+        ],
+        [
+          "info",
+          "legL bends backward (twisted leg, shoe flipped) on purpose"
+        ],
+        [
+          "info",
+          "legL foot lifted 56px"
+        ],
+        [
+          "info",
+          "legR foot lifted 58px"
+        ]
+      ]
+    },
+    "crouch": {
+      "pose": {
+        "facing": "left",
+        "look": "ahead",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 49,
+          "rot": 0
+        },
+        "spine": -12,
+        "neck": 8,
+        "seat": "none",
+        "armL": {
+          "a": 30,
+          "b": -10,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 35,
+          "b": -12,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "front",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -45,
+          "b": 85,
+          "s1": 1,
+          "s2": 1,
+          "foot": 34,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": -45,
+          "b": 85,
+          "s1": 1,
+          "s2": 1,
+          "foot": 34,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": -15.880454407331172,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ]
+      ]
+    },
+    "wave": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "calm",
+        "root": {
+          "x": 0,
+          "y": 0,
+          "rot": 0
+        },
+        "spine": 2,
+        "neck": -4,
+        "seat": "none",
+        "armL": {
+          "a": -12,
+          "b": -8,
+          "s1": 1,
+          "s2": 1,
+          "hand": "relaxed",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 10,
+            "curl": [
+              0.15,
+              0.22,
+              0.28,
+              0.34
+            ],
+            "thumb": 30,
+            "tcurl": 0.15
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 150,
+          "b": 30,
+          "s1": 1,
+          "s2": 1,
+          "hand": "wave",
+          "layer": "front",
+          "bend": -1,
+          "fingers": {
+            "spread": 16,
+            "curl": [
+              0,
+              0,
+              0.05,
+              0.1
+            ],
+            "thumb": 55,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -2,
+          "b": 1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 3,
+          "b": -1,
+          "s1": 1,
+          "s2": 1,
+          "foot": 0,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0.024525641028276368,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armR bends backward on purpose"
+        ]
+      ]
+    },
+    "glide": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "calm",
+        "root": {
+          "x": 20,
+          "y": -150,
+          "rot": -78
+        },
+        "spine": 0,
+        "neck": 44,
+        "seat": "none",
+        "armL": {
+          "a": -6,
+          "b": -6,
+          "s1": 1,
+          "s2": 1,
+          "hand": "open",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 21,
+            "curl": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "thumb": 64,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 172,
+          "b": 4,
+          "s1": 1,
+          "s2": 1,
+          "hand": "open",
+          "layer": "front",
+          "bend": -1,
+          "fingers": {
+            "spread": 21,
+            "curl": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "thumb": 64,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": 4,
+          "b": -2,
+          "s1": 1,
+          "s2": 1,
+          "foot": -50,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": -12,
+          "b": 72,
+          "s1": 1,
+          "s2": 1,
+          "foot": -30,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armR bends backward on purpose"
+        ],
+        [
+          "info",
+          "Airborne or lying: ground contact not checked"
+        ]
+      ]
+    },
+    "jump": {
+      "pose": {
+        "facing": "left",
+        "look": "camera",
+        "expr": "joy",
+        "root": {
+          "x": 0,
+          "y": -110,
+          "rot": 0
+        },
+        "spine": 6,
+        "neck": -4,
+        "seat": "none",
+        "armL": {
+          "a": -158,
+          "b": -6,
+          "s1": 1,
+          "s2": 1,
+          "hand": "open",
+          "layer": "back",
+          "bend": 1,
+          "fingers": {
+            "spread": 21,
+            "curl": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "thumb": 64,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "armR": {
+          "a": 114,
+          "b": 8,
+          "s1": 1,
+          "s2": 1,
+          "hand": "wave",
+          "layer": "front",
+          "bend": -1,
+          "fingers": {
+            "spread": 16,
+            "curl": [
+              0,
+              0,
+              0.05,
+              0.1
+            ],
+            "thumb": 55,
+            "tcurl": 0
+          },
+          "wrist": 0
+        },
+        "legL": {
+          "a": -14,
+          "b": 118,
+          "s1": 1,
+          "s2": 1,
+          "foot": -10,
+          "layer": "back",
+          "bend": -1
+        },
+        "legR": {
+          "a": 2,
+          "b": 112,
+          "s1": 1,
+          "s2": 1,
+          "foot": -10,
+          "layer": "back",
+          "bend": -1
+        }
+      },
+      "placementDy": 0,
+      "rigCheck": [
+        [
+          "ok",
+          "Within limits, no flips, contacts hold"
+        ],
+        [
+          "info",
+          "armR bends backward on purpose"
+        ],
+        [
+          "info",
+          "Airborne or lying: ground contact not checked"
+        ]
+      ]
+    }
+  }
+}

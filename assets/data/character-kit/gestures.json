@@ -1,0 +1,101 @@
+{
+  "relaxed": {
+    "spread": 10,
+    "curl": [
+      0.15,
+      0.22,
+      0.28,
+      0.34
+    ],
+    "thumb": 30,
+    "tcurl": 0.15
+  },
+  "open": {
+    "spread": 21,
+    "curl": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "thumb": 64,
+    "tcurl": 0
+  },
+  "fist": {
+    "spread": 7,
+    "curl": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "thumb": 20,
+    "tcurl": 0.55
+  },
+  "point": {
+    "spread": 8,
+    "curl": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "thumb": 24,
+    "tcurl": 0.55
+  },
+  "peace": {
+    "spread": 17,
+    "curl": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "thumb": 26,
+    "tcurl": 0.6
+  },
+  "thumbsup": {
+    "spread": 5,
+    "curl": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "thumb": 175,
+    "tcurl": 0
+  },
+  "claw": {
+    "spread": 19,
+    "curl": [
+      0.5,
+      0.45,
+      0.45,
+      0.5
+    ],
+    "thumb": 52,
+    "tcurl": 0.35
+  },
+  "pinch": {
+    "spread": 5,
+    "curl": [
+      0.55,
+      0.95,
+      1,
+      1
+    ],
+    "thumb": 12,
+    "tcurl": 0.25
+  },
+  "wave": {
+    "spread": 16,
+    "curl": [
+      0,
+      0,
+      0.05,
+      0.1
+    ],
+    "thumb": 55,
+    "tcurl": 0
+  }
+}

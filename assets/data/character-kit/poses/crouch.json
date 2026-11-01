@@ -1,0 +1,34 @@
+{
+  "name": "Crouch",
+  "look": "ahead",
+  "expr": "calm",
+  "root": {
+    "x": 0,
+    "y": 49,
+    "rot": 0
+  },
+  "spine": -12,
+  "neck": 8,
+  "legL": {
+    "a": -45,
+    "b": 85,
+    "foot": 34
+  },
+  "legR": {
+    "a": -45,
+    "b": 85,
+    "foot": 34
+  },
+  "armL": {
+    "a": 30,
+    "b": -10,
+    "hand": "relaxed",
+    "layer": "back"
+  },
+  "armR": {
+    "a": 35,
+    "b": -12,
+    "hand": "relaxed",
+    "layer": "front"
+  }
+}

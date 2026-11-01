@@ -1,0 +1,22 @@
+{
+  "name": "Hand on chin",
+  "look": "up",
+  "expr": "calm",
+  "neck": -6,
+  "armR": {
+    "t": [
+      146,
+      198
+    ],
+    "bend": 1,
+    "hand": "fist",
+    "layer": "front",
+    "wrist": -10
+  },
+  "armL": {
+    "a": -4,
+    "b": -12,
+    "hand": "relaxed",
+    "layer": "back"
+  }
+}

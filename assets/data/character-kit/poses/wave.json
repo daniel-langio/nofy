@@ -1,0 +1,14 @@
+{
+  "name": "Wave hello",
+  "look": "camera",
+  "expr": "calm",
+  "spine": 2,
+  "neck": -4,
+  "armR": {
+    "a": 150,
+    "b": 30,
+    "bend": -1,
+    "hand": "wave",
+    "layer": "front"
+  }
+}

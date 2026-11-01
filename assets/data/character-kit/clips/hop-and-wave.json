@@ -1,0 +1,71 @@
+{
+  "id": "hop-and-wave",
+  "fps": 30,
+  "startFrame": 0,
+  "endFrame": 130,
+  "rigVersion": "humanoid-v3",
+  "keys": [
+    {
+      "frame": 0,
+      "pose": "stand"
+    },
+    {
+      "frame": 16,
+      "pose": "crouch",
+      "ease": "inOut"
+    },
+    {
+      "frame": 28,
+      "pose": "jump",
+      "ease": "out"
+    },
+    {
+      "frame": 44,
+      "pose": "crouch",
+      "ease": "in"
+    },
+    {
+      "frame": 58,
+      "pose": "stand",
+      "ease": "inOut"
+    },
+    {
+      "frame": 80,
+      "pose": "wave",
+      "ease": "inOut"
+    },
+    {
+      "frame": 130,
+      "pose": "wave",
+      "ease": "linear"
+    }
+  ],
+  "tracks": {
+    "armR.wrist": [
+      {
+        "frame": 80,
+        "value": 0
+      },
+      {
+        "frame": 88,
+        "value": 26
+      },
+      {
+        "frame": 96,
+        "value": -16
+      },
+      {
+        "frame": 104,
+        "value": 26
+      },
+      {
+        "frame": 112,
+        "value": -16
+      },
+      {
+        "frame": 122,
+        "value": 0
+      }
+    ]
+  }
+}

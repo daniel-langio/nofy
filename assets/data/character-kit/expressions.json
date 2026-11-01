@@ -1,0 +1,81 @@
+{
+  "expressions": {
+    "laugh": {
+      "eyes": "squeeze",
+      "mouth": "laugh"
+    },
+    "calm": {
+      "eyes": "open",
+      "mouth": "smile"
+    },
+    "joy": {
+      "eyes": "happy",
+      "mouth": "grin"
+    },
+    "pout": {
+      "eyes": "open",
+      "mouth": "pout"
+    },
+    "sip": {
+      "eyes": "half",
+      "mouth": "sip"
+    },
+    "surprised": {
+      "eyes": "wide",
+      "mouth": "o",
+      "brows": "up"
+    },
+    "worried": {
+      "eyes": "open",
+      "mouth": "wobble",
+      "brows": "worried"
+    },
+    "grumpy": {
+      "eyes": "half",
+      "mouth": "frown",
+      "brows": "angry"
+    },
+    "sleepy": {
+      "eyes": "closed",
+      "mouth": "flat",
+      "brows": "low"
+    },
+    "skeptical": {
+      "eyes": "open",
+      "mouth": "flat",
+      "brows": "skeptic"
+    },
+    "sad": {
+      "eyes": "down",
+      "mouth": "frown",
+      "brows": "worried"
+    },
+    "proud": {
+      "eyes": "happy",
+      "mouth": "smile",
+      "brows": "up"
+    }
+  },
+  "lookOffsets": {
+    "camera": [
+      0,
+      0
+    ],
+    "ahead": [
+      -4,
+      0
+    ],
+    "back": [
+      4,
+      0
+    ],
+    "up": [
+      -1,
+      -3.5
+    ],
+    "down": [
+      -1,
+      3.5
+    ]
+  }
+}

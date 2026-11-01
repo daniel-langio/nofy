@@ -1,0 +1,200 @@
+{
+  "characters": {
+    "nori": {
+      "name": "Nori",
+      "longSleeves": false,
+      "build": {
+        "scale": 1,
+        "head": 1,
+        "arm": [
+          64,
+          70
+        ],
+        "leg": [
+          95,
+          92
+        ]
+      },
+      "colors": {
+        "skin": "#C24BD0",
+        "skinS": "#8E2AAE",
+        "hair": "#24175E",
+        "hairS": "#3A2A86",
+        "top": "#FF6B5A",
+        "topS": "#EE503F",
+        "hem": "#E2433A",
+        "collar": "#FFA13C",
+        "pants": "#2E5BB8",
+        "pantsS": "#24479A",
+        "cuff": "#5684E0",
+        "sock": "#FFFFFF",
+        "shoe": "#002B57",
+        "lips": "#891154",
+        "tongue": "#D2457E",
+        "eye": "#4A145C",
+        "blush": "#93248C",
+        "accent": "#FFD93B"
+      }
+    },
+    "bastien": {
+      "name": "Bastien",
+      "longSleeves": true,
+      "build": {
+        "scale": 0.95,
+        "head": 1.06,
+        "arm": [
+          62,
+          66
+        ],
+        "leg": [
+          84,
+          80
+        ],
+        "stoop": -5
+      },
+      "colors": {
+        "skin": "#B246C4",
+        "skinS": "#83279C",
+        "hair": "#EEE8F7",
+        "hairS": "#D9CFEA",
+        "top": "#2FA38F",
+        "topS": "#23806F",
+        "hem": "#23806F",
+        "collar": "#F4EEDC",
+        "pants": "#8A5A3B",
+        "pantsS": "#6C442C",
+        "cuff": "#A6714E",
+        "sock": "#E9E1F5",
+        "shoe": "#3A2416",
+        "lips": "#7E1450",
+        "tongue": "#D2457E",
+        "eye": "#3E1150",
+        "blush": "#8E2287",
+        "accent": "#FFD93B",
+        "cap": "#5A4A8C",
+        "capL": "#8576C4",
+        "glass": "#F3EEFF"
+      }
+    },
+    "eric": {
+      "name": "Eric",
+      "longSleeves": false,
+      "build": {
+        "scale": 0.66,
+        "head": 1.62,
+        "headDy": 16,
+        "arm": [
+          42,
+          40
+        ],
+        "leg": [
+          50,
+          44
+        ]
+      },
+      "colors": {
+        "skin": "#C454D6",
+        "skinS": "#9230AE",
+        "hair": "#3B2160",
+        "hairS": "#2A1748",
+        "top": "#FFF3DE",
+        "topS": "#EADBC0",
+        "hem": "#EADBC0",
+        "collar": "#7FD3E6",
+        "stripe": "#7FD3E6",
+        "pants": "#2FAE8A",
+        "pantsS": "#238B6E",
+        "cuff": "#5CCBA8",
+        "sock": "#FFFFFF",
+        "shoe": "#F2B92E",
+        "lips": "#8A1650",
+        "tongue": "#E0577F",
+        "eye": "#3B1050",
+        "blush": "#E26BB4",
+        "accent": "#FFD93B"
+      }
+    }
+  },
+  "adultLengths": {
+    "arm": [
+      64,
+      70
+    ],
+    "leg": [
+      95,
+      92
+    ]
+  },
+  "bindRig": {
+    "armL": {
+      "S": [
+        117,
+        227
+      ],
+      "L1": 64,
+      "L2": 70,
+      "w": [
+        13,
+        13,
+        13
+      ]
+    },
+    "armR": {
+      "S": [
+        183,
+        227
+      ],
+      "L1": 64,
+      "L2": 70,
+      "w": [
+        13,
+        13,
+        13
+      ]
+    },
+    "legL": {
+      "S": [
+        127,
+        342
+      ],
+      "L1": 95,
+      "L2": 92,
+      "w": [
+        27,
+        24,
+        22
+      ]
+    },
+    "legR": {
+      "S": [
+        173,
+        342
+      ],
+      "L1": 95,
+      "L2": 92,
+      "w": [
+        27,
+        24,
+        22
+      ]
+    }
+  },
+  "h0": [
+    150,
+    330
+  ],
+  "n": [
+    150,
+    198
+  ],
+  "seats": {
+    "chair": {
+      "top": 440,
+      "off": 20
+    },
+    "step": {
+      "top": 410,
+      "off": 39
+    }
+  }
+}

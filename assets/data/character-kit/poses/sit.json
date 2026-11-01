@@ -1,0 +1,47 @@
+{
+  "name": "Sit, hands clasped",
+  "look": "back",
+  "expr": "calm",
+  "seat": "chair",
+  "root": {
+    "x": 0,
+    "y": 71,
+    "rot": 0
+  },
+  "spine": 3,
+  "neck": -6,
+  "legL": {
+    "a": -55,
+    "b": 57,
+    "s1": 0.45,
+    "s2": 1,
+    "foot": 4
+  },
+  "legR": {
+    "a": -70,
+    "b": 66,
+    "s1": 0.62,
+    "s2": 1,
+    "foot": 0
+  },
+  "armL": {
+    "t": [
+      112,
+      358
+    ],
+    "frame": "body",
+    "bend": 1,
+    "hand": "clasp",
+    "layer": "front"
+  },
+  "armR": {
+    "t": [
+      127,
+      345
+    ],
+    "frame": "body",
+    "bend": 1,
+    "hand": "clasp",
+    "layer": "front"
+  }
+}
