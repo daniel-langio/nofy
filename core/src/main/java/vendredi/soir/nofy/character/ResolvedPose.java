@@ -1,5 +1,7 @@
 package vendredi.soir.nofy.character;
 
+import java.util.ArrayList;
+import java.util.List;
 import vendredi.soir.nofy.data.LimbPose;
 import vendredi.soir.nofy.data.PoseDefinition;
 
@@ -24,6 +26,10 @@ public class ResolvedPose {
   public float rootX;
   public float rootY;
   public float rootRot;
+
+  /** Problems found while resolving, e.g. an IK target out of reach. */
+  public final List<String> warnings = new ArrayList<>();
+
   public final Limb[] limbs = {new Limb(), new Limb(), new Limb(), new Limb()};
 
   public static class Limb {
@@ -63,6 +69,7 @@ public class ResolvedPose {
     c.rootX = rootX;
     c.rootY = rootY;
     c.rootRot = rootRot;
+    c.warnings.addAll(warnings);
     for (int i = 0; i < 4; i++) {
       c.limbs[i] = limbs[i].copy();
     }
