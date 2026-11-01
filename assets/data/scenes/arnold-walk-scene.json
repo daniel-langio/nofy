@@ -1,0 +1,11 @@
+{
+  "id": "arnold-walk",
+  "entities": [
+    {
+      "entityDefinitionId": "arnold",
+      "instanceName": "Arnold",
+      "x": 88,
+      "y": 40
+    }
+  ]
+}

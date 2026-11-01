@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
-import vendredi.soir.nofy.entity.AnimatedEntity;
+import vendredi.soir.nofy.entity.Entity;
 import vendredi.soir.nofy.system.CollisionSystem;
 import vendredi.soir.nofy.system.TriggerSystem;
 
@@ -61,7 +61,7 @@ public abstract class Game {
   }
 
   private void followCameraTarget() {
-    AnimatedEntity target = world.getCameraTarget();
+    Entity target = world.getCameraTarget();
     if (target == null) {
       return;
     }

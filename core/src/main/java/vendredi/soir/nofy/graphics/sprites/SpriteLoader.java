@@ -31,6 +31,11 @@ public final class SpriteLoader {
     return spriteSet;
   }
 
+  /** A region covering a whole image, for rig parts - each is already its own trimmed file. */
+  public static TextureRegion loadRegion(String filePath) {
+    return new TextureRegion(getOrLoadTexture(filePath));
+  }
+
   private static Texture getOrLoadTexture(String path) {
     return TEXTURE_CACHE.computeIfAbsent(path, Texture::new);
   }

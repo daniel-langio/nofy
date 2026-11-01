@@ -3,14 +3,16 @@ package vendredi.soir.nofy.entity;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.math.Rectangle;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import lombok.Getter;
 import lombok.Setter;
 import vendredi.soir.nofy.data.ActionRule;
 import vendredi.soir.nofy.graphics.sprites.SpriteAnimation;
 
 @Getter
-public class AnimatedEntity extends TexturedEntity {
+public class AnimatedEntity extends TexturedEntity implements Entity {
   private final String defaultActionId;
   private final List<SpriteAnimation> animations;
   private String currentActionId;
@@ -26,6 +28,7 @@ public class AnimatedEntity extends TexturedEntity {
     this.currentActionId = defaultActionId;
   }
 
+  @Override
   public void play(String actionId) {
     if (!actionId.equals(currentActionId)) {
       resetCurrentAnimation();
@@ -42,6 +45,7 @@ public class AnimatedEntity extends TexturedEntity {
     batch.draw(getCurrentAnimation().getCurrentFrame(), getX(), getY(), getWidth(), getHeight());
   }
 
+  @Override
   public void animate(float deltaTime) {
     SpriteAnimation currentAnimation = getCurrentAnimation();
     currentAnimation.animate(deltaTime);
@@ -71,6 +75,15 @@ public class AnimatedEntity extends TexturedEntity {
       setY(bounceBounds.y + bounceBounds.height - getHeight());
       currentAnimation.setVy(-Math.abs(currentAnimation.getVy()));
     }
+  }
+
+  @Override
+  public Set<Texture> getTexturesToDispose() {
+    Set<Texture> textures = new HashSet<>();
+    for (SpriteAnimation animation : animations) {
+      animation.getFrames().forEach(frame -> textures.add(frame.getTexture()));
+    }
+    return textures;
   }
 
   public Texture getDefaultTexture() {

@@ -13,6 +13,7 @@ java -jar lwjgl3/build/libs/Nofy-video-export-1.0.0.jar assets/data/video/ball-b
 {
   "actionsDir": "data/actions",
   "entitiesDir": "data/entities",
+  "rigsDir": "data/rigs",
   "sceneFile": "data/scenes/two-balls-collide-scene.json",
   "outputPath": "output/two-balls-collide.mp4",
   "fps": 30,
@@ -25,7 +26,7 @@ java -jar lwjgl3/build/libs/Nofy-video-export-1.0.0.jar assets/data/video/ball-b
 
 | field | meaning |
 |---|---|
-| `actionsDir`, `entitiesDir`, `sceneFile` | same loaders as the interactive game — internal/classpath paths, resolved from inside the jar |
+| `actionsDir`, `entitiesDir`, `rigsDir`, `sceneFile` | same loaders as the interactive game — internal/classpath paths, resolved from inside the jar. `rigsDir` defaults to `data/rigs` and can be omitted |
 | `outputPath` | plain filesystem path (not a Gdx asset), relative to wherever the jar is launched from |
 | `fps`, `width`, `height` | output video specs |
 | `durationSeconds` | **safety cap**, not the expected length — stops here regardless of anything else |

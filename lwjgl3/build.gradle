@@ -60,6 +60,22 @@ tasks.register('runBallBounce', JavaExec) {
   if (os.contains('mac')) jvmArgs += "-XstartOnFirstThread"
 }
 
+tasks.register('runArnold', JavaExec) {
+  group = 'application'
+  mainClass.set('vendredi.soir.nofy.lwjgl3.demo.arnold.ArnoldLauncher')
+  classpath = sourceSets.test.runtimeClasspath
+  workingDir = rootProject.file('assets').path
+  if (os.contains('mac')) jvmArgs += "-XstartOnFirstThread"
+}
+
+tasks.register('runArnoldWalk', JavaExec) {
+  group = 'application'
+  mainClass.set('vendredi.soir.nofy.lwjgl3.demo.arnoldwalk.ArnoldWalkLauncher')
+  classpath = sourceSets.test.runtimeClasspath
+  workingDir = rootProject.file('assets').path
+  if (os.contains('mac')) jvmArgs += "-XstartOnFirstThread"
+}
+
 tasks.register('runPaddleControl', JavaExec) {
   group = 'application'
   mainClass.set('vendredi.soir.nofy.lwjgl3.demo.paddlecontrol.PaddleControlLauncher')

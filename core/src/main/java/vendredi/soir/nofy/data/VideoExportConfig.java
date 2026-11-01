@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 public class VideoExportConfig {
   private String actionsDir;
   private String entitiesDir;
+  private String rigsDir = "data/rigs";
   private String sceneFile;
   private String outputPath;
   private int fps = 30;

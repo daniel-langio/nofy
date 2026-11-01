@@ -9,42 +9,41 @@ import java.util.Map;
 import java.util.Set;
 import lombok.Getter;
 import vendredi.soir.nofy.entity.AnimatedEntity;
-import vendredi.soir.nofy.entity.TexturedEntity;
+import vendredi.soir.nofy.entity.Entity;
 import vendredi.soir.nofy.game.GameWorld;
 import vendredi.soir.nofy.graphics.sprites.SpriteAnimation;
 
 /**
- * Pairwise bounding-box collision among "solid" entities. O(n^2) - fine at demo scale, not meant
- * to scale to large entity counts. Also counts distinct collision events (a pair transitioning
- * from separated to overlapping, not every frame they happen to stay in contact), for callers
- * that want to react to or stop after N collisions.
+ * Pairwise bounding-box collision among "solid" entities. O(n^2) - fine at demo scale, not meant to
+ * scale to large entity counts. Also counts distinct collision events (a pair transitioning from
+ * separated to overlapping, not every frame they happen to stay in contact), for callers that want
+ * to react to or stop after N collisions.
  */
 public class CollisionSystem {
   @Getter private int collisionEventCount = 0;
 
-  private final Set<Map.Entry<AnimatedEntity, AnimatedEntity>> previouslyOverlapping =
-      new HashSet<>();
+  private final Set<Map.Entry<Entity, Entity>> previouslyOverlapping = new HashSet<>();
 
   public void resolve(GameWorld world) {
-    List<AnimatedEntity> solidEntities = new ArrayList<>();
-    for (TexturedEntity entity : world.getEntities()) {
-      if (entity instanceof AnimatedEntity animatedEntity && animatedEntity.isSolid()) {
-        solidEntities.add(animatedEntity);
+    List<Entity> solidEntities = new ArrayList<>();
+    for (Entity entity : world.getEntities()) {
+      if (entity.isSolid()) {
+        solidEntities.add(entity);
       }
     }
 
-    Set<Map.Entry<AnimatedEntity, AnimatedEntity>> stillOverlapping = new HashSet<>();
+    Set<Map.Entry<Entity, Entity>> stillOverlapping = new HashSet<>();
 
     for (int i = 0; i < solidEntities.size(); i++) {
       for (int j = i + 1; j < solidEntities.size(); j++) {
-        AnimatedEntity a = solidEntities.get(i);
-        AnimatedEntity b = solidEntities.get(j);
+        Entity a = solidEntities.get(i);
+        Entity b = solidEntities.get(j);
 
         if (!resolvePair(a, b)) {
           continue;
         }
 
-        Map.Entry<AnimatedEntity, AnimatedEntity> pairKey = new AbstractMap.SimpleEntry<>(a, b);
+        Map.Entry<Entity, Entity> pairKey = new AbstractMap.SimpleEntry<>(a, b);
         stillOverlapping.add(pairKey);
         if (!previouslyOverlapping.contains(pairKey)) {
           collisionEventCount++;
@@ -56,17 +55,19 @@ public class CollisionSystem {
     previouslyOverlapping.addAll(stillOverlapping);
   }
 
-  private boolean resolvePair(AnimatedEntity a, AnimatedEntity b) {
+  private boolean resolvePair(Entity a, Entity b) {
     Rectangle boundsA = a.getBoundingRectangle();
     Rectangle boundsB = b.getBoundingRectangle();
     if (!boundsA.overlaps(boundsB)) {
       return false;
     }
 
-    float overlapX = Math.min(boundsA.x + boundsA.width, boundsB.x + boundsB.width)
-        - Math.max(boundsA.x, boundsB.x);
-    float overlapY = Math.min(boundsA.y + boundsA.height, boundsB.y + boundsB.height)
-        - Math.max(boundsA.y, boundsB.y);
+    float overlapX =
+        Math.min(boundsA.x + boundsA.width, boundsB.x + boundsB.width)
+            - Math.max(boundsA.x, boundsB.x);
+    float overlapY =
+        Math.min(boundsA.y + boundsA.height, boundsB.y + boundsB.height)
+            - Math.max(boundsA.y, boundsB.y);
 
     if (overlapX < overlapY) {
       separateAndBounce(a, b, overlapX, true, boundsA.x < boundsB.x);
@@ -77,7 +78,7 @@ public class CollisionSystem {
   }
 
   private void separateAndBounce(
-      AnimatedEntity a, AnimatedEntity b, float overlap, boolean xAxis, boolean aIsLower) {
+      Entity a, Entity b, float overlap, boolean xAxis, boolean aIsLower) {
     float push = overlap / 2f;
     float aSign = aIsLower ? -1f : 1f;
 
@@ -95,20 +96,21 @@ public class CollisionSystem {
   }
 
   // A controlled entity's position is driven by the mouse, not its own velocity - don't perturb
-  // the velocity it'll resume with once released.
-  private void flipVx(AnimatedEntity entity) {
-    if (entity.isPositionDrivenByTrigger()) {
+  // the velocity it'll resume with once released. Velocity itself lives on a sprite entity's
+  // current action, so a rigged character is separated but has nothing to reverse.
+  private void flipVx(Entity entity) {
+    if (entity.isPositionDrivenByTrigger() || !(entity instanceof AnimatedEntity animated)) {
       return;
     }
-    SpriteAnimation animation = entity.getCurrentAnimation();
+    SpriteAnimation animation = animated.getCurrentAnimation();
     animation.setVx(-animation.getVx());
   }
 
-  private void flipVy(AnimatedEntity entity) {
-    if (entity.isPositionDrivenByTrigger()) {
+  private void flipVy(Entity entity) {
+    if (entity.isPositionDrivenByTrigger() || !(entity instanceof AnimatedEntity animated)) {
       return;
     }
-    SpriteAnimation animation = entity.getCurrentAnimation();
+    SpriteAnimation animation = animated.getCurrentAnimation();
     animation.setVy(-animation.getVy());
   }
 }

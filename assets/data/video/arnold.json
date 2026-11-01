@@ -1,0 +1,11 @@
+{
+  "actionsDir": "data/actions",
+  "entitiesDir": "data/entities",
+  "rigsDir": "data/rigs",
+  "sceneFile": "data/scenes/arnold-scene.json",
+  "outputPath": "output/arnold.mp4",
+  "fps": 30,
+  "durationSeconds": 2,
+  "width": 600,
+  "height": 600
+}

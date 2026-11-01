@@ -6,6 +6,8 @@ Interactive previews live under `lwjgl3/src/test/java/.../lwjgl3/demo/<scenario>
 |---|---|---|
 | ball-bounce | `./gradlew lwjgl3:runBallBounce` | one ball, box-bounce only |
 | paddle-control | `./gradlew lwjgl3:runPaddleControl` | mouse-dragged paddle (`HOVER` + `followTrigger`) deflecting a ball via `CollisionSystem` |
+| arnold | `./gradlew lwjgl3:runArnold` | the rig-based character standing in his bind pose, one shoulder swinging (see [Rigged characters](rigged-characters.md)) |
+| arnold-walk | `./gradlew lwjgl3:runArnoldWalk` | Arnold walking under keyboard control — left/right arrows or A/D, facing the way he goes |
 
 ## Adding a new demo
 

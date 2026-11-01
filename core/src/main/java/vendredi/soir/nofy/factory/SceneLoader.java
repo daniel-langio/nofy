@@ -10,8 +10,10 @@ import vendredi.soir.nofy.data.ActionRule;
 import vendredi.soir.nofy.data.BoundsDefinition;
 import vendredi.soir.nofy.data.EntityDefinition;
 import vendredi.soir.nofy.data.EntityInstanceDefinition;
+import vendredi.soir.nofy.data.RigDefinition;
 import vendredi.soir.nofy.data.SceneDefinition;
 import vendredi.soir.nofy.entity.AnimatedEntity;
+import vendredi.soir.nofy.entity.Entity;
 import vendredi.soir.nofy.game.GameWorld;
 
 public final class SceneLoader {
@@ -21,6 +23,7 @@ public final class SceneLoader {
       GameWorld world,
       String sceneFilePath,
       Map<String, EntityDefinition> entityDefinitions,
+      Map<String, RigDefinition> rigs,
       Map<String, ActionDefinition> actions) {
     SceneDefinition scene =
         GameDataJson.instance().fromJson(SceneDefinition.class, Gdx.files.internal(sceneFilePath));
@@ -38,14 +41,19 @@ public final class SceneLoader {
                 instance.getEntityDefinitionId(), sceneFilePath));
       }
 
-      AnimatedEntity entity =
+      Entity entity =
           EntityFactory.create(
-              entityDefinition, actions, instance.getInstanceName(), instance.getInitialActionId());
+              entityDefinition,
+              actions,
+              rigs,
+              instance.getInstanceName(),
+              instance.getInitialActionId());
       entity.setPosition(instance.getX(), instance.getY());
 
       BoundsDefinition bounceBounds = instance.getBounceBounds();
-      if (bounceBounds != null) {
-        entity.setBounceBounds(
+      // Bouncing is driven by an action's velocity, which only sprite-based entities have.
+      if (bounceBounds != null && entity instanceof AnimatedEntity animated) {
+        animated.setBounceBounds(
             new Rectangle(
                 bounceBounds.getX(),
                 bounceBounds.getY(),

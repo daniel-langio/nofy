@@ -16,20 +16,22 @@ import java.util.Map;
 import org.jcodec.api.awt.AWTSequenceEncoder;
 import vendredi.soir.nofy.data.ActionDefinition;
 import vendredi.soir.nofy.data.EntityDefinition;
+import vendredi.soir.nofy.data.RigDefinition;
 import vendredi.soir.nofy.data.VideoExportConfig;
+import vendredi.soir.nofy.entity.Entity;
 import vendredi.soir.nofy.factory.ActionLoader;
 import vendredi.soir.nofy.factory.EntityDefinitionLoader;
+import vendredi.soir.nofy.factory.RigLoader;
 import vendredi.soir.nofy.factory.SceneLoader;
-import vendredi.soir.nofy.entity.AnimatedEntity;
 import vendredi.soir.nofy.game.Game;
 import vendredi.soir.nofy.game.GameWorld;
 import vendredi.soir.nofy.system.CollisionSystem;
 import vendredi.soir.nofy.system.TriggerSystem;
 
 /**
- * Drives the same GameWorld/AnimatedEntity/SceneLoader pipeline as the interactive game, but with
- * a fixed timestep (not wall-clock time) so playback speed is deterministic, capturing each frame
- * to a video file instead of presenting it on screen.
+ * Drives the same GameWorld/AnimatedEntity/SceneLoader pipeline as the interactive game, but with a
+ * fixed timestep (not wall-clock time) so playback speed is deterministic, capturing each frame to
+ * a video file instead of presenting it on screen.
  */
 public class VideoExportApplication implements ApplicationListener {
   private final VideoExportConfig config;
@@ -60,7 +62,8 @@ public class VideoExportApplication implements ApplicationListener {
     Map<String, ActionDefinition> actions = ActionLoader.loadAll(config.getActionsDir());
     Map<String, EntityDefinition> entityDefinitions =
         EntityDefinitionLoader.loadAll(config.getEntitiesDir());
-    SceneLoader.populate(world, config.getSceneFile(), entityDefinitions, actions);
+    Map<String, RigDefinition> rigs = RigLoader.loadAll(config.getRigsDir());
+    SceneLoader.populate(world, config.getSceneFile(), entityDefinitions, rigs, actions);
 
     fixedDeltaTime = 1f / config.getFps();
     totalFrames = config.getFps() * config.getDurationSeconds();
@@ -123,7 +126,7 @@ public class VideoExportApplication implements ApplicationListener {
   }
 
   private void followCameraTarget() {
-    AnimatedEntity target = world.getCameraTarget();
+    Entity target = world.getCameraTarget();
     if (target == null) {
       return;
     }

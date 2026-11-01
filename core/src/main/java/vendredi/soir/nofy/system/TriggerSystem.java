@@ -7,22 +7,21 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import vendredi.soir.nofy.data.ActionRule;
 import vendredi.soir.nofy.data.TriggerDefinition;
-import vendredi.soir.nofy.entity.AnimatedEntity;
-import vendredi.soir.nofy.entity.TexturedEntity;
+import vendredi.soir.nofy.entity.Entity;
 import vendredi.soir.nofy.game.GameWorld;
 
 /**
  * Evaluates each entity's ordered (Trigger, Action) rules (highest priority first, already sorted
  * by SceneLoader) and switches its current action to the first whose trigger currently holds,
- * falling back to the entity's own default action when none do. A winning rule may also be
- * marked to drive the entity's position from the trigger's source (only the mouse, for now, and
- * only one entity may be so driven at a time).
+ * falling back to the entity's own default action when none do. A winning rule may also be marked
+ * to drive the entity's position from the trigger's source (only the mouse, for now, and only one
+ * entity may be so driven at a time).
  */
 public class TriggerSystem {
   private static final float DAY_LENGTH_SECONDS = 120f;
 
-  private AnimatedEntity following;
-  private AnimatedEntity clickOriginEntity;
+  private Entity following;
+  private Entity clickOriginEntity;
 
   public void update(GameWorld world, Viewport viewport, double upTime) {
     Vector2 mouseWorld = viewport.unproject(new Vector2(Gdx.input.getX(), Gdx.input.getY()));
@@ -34,8 +33,8 @@ public class TriggerSystem {
       clickOriginEntity = null;
     }
 
-    for (TexturedEntity textured : world.getEntities()) {
-      if (!(textured instanceof AnimatedEntity entity) || entity.getActionRules().isEmpty()) {
+    for (Entity entity : world.getEntities()) {
+      if (entity.getActionRules().isEmpty()) {
         continue;
       }
       evaluate(entity, world, mouseWorld, leftJustPressed, leftButtonPressed, hourOfDay);
@@ -43,7 +42,7 @@ public class TriggerSystem {
   }
 
   private void evaluate(
-      AnimatedEntity entity,
+      Entity entity,
       GameWorld world,
       Vector2 mouseWorld,
       boolean leftJustPressed,
@@ -51,7 +50,14 @@ public class TriggerSystem {
       float hourOfDay) {
     ActionRule winner = null;
     for (ActionRule rule : entity.getActionRules()) {
-      if (isSatisfied(rule.getTrigger(), entity, world, mouseWorld, leftJustPressed, leftButtonPressed, hourOfDay)) {
+      if (isSatisfied(
+          rule.getTrigger(),
+          entity,
+          world,
+          mouseWorld,
+          leftJustPressed,
+          leftButtonPressed,
+          hourOfDay)) {
         winner = rule;
         break;
       }
@@ -75,7 +81,7 @@ public class TriggerSystem {
 
   private boolean isSatisfied(
       TriggerDefinition trigger,
-      AnimatedEntity entity,
+      Entity entity,
       GameWorld world,
       Vector2 mouseWorld,
       boolean leftJustPressed,
@@ -83,10 +89,12 @@ public class TriggerSystem {
       float hourOfDay) {
     Rectangle bounds = entity.getBoundingRectangle();
     return switch (trigger.getType()) {
-      case CLICK -> isClickSatisfied(entity, bounds, mouseWorld, leftJustPressed, leftButtonPressed);
+      case CLICK ->
+          isClickSatisfied(entity, bounds, mouseWorld, leftJustPressed, leftButtonPressed);
       case HOVER -> bounds.contains(mouseWorld);
       case PROXIMITY -> isWithinProximity(entity, world, trigger.getRadius());
-      case TIME_OF_DAY -> isWithinHourRange(hourOfDay, trigger.getStartHour(), trigger.getEndHour());
+      case TIME_OF_DAY ->
+          isWithinHourRange(hourOfDay, trigger.getStartHour(), trigger.getEndHour());
       case ENVIRONMENT_EVENT -> world.isEventActive(trigger.getEventName());
     };
   }
@@ -94,7 +102,7 @@ public class TriggerSystem {
   // True from the frame the button is pressed down over this entity until it's released,
   // regardless of where the mouse moves in between - classic click-and-drag, not a one-frame blip.
   private boolean isClickSatisfied(
-      AnimatedEntity entity,
+      Entity entity,
       Rectangle bounds,
       Vector2 mouseWorld,
       boolean leftJustPressed,
@@ -112,8 +120,8 @@ public class TriggerSystem {
     return false;
   }
 
-  private boolean isWithinProximity(AnimatedEntity entity, GameWorld world, Float radius) {
-    AnimatedEntity target = world.getCameraTarget();
+  private boolean isWithinProximity(Entity entity, GameWorld world, Float radius) {
+    Entity target = world.getCameraTarget();
     if (target == null || target == entity || radius == null) {
       return false;
     }

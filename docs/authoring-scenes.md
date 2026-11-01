@@ -36,6 +36,8 @@ An entity type: size, default action, and one animation binding per action it su
 
 An entity can only play an action it has a binding for. Multiple entities can bind the same action id to different sprites (e.g. `ball` and `ball-blue` both bind `bounce`) — that's how one action is reused across different-looking entities.
 
+An entity with a `rigId` instead of `animations` is a rig-based character, assembled from body parts rather than a sprite sheet — see [Rigged characters](rigged-characters.md).
+
 ## Scenes (`assets/data/scenes/*.json`)
 
 Places entity instances in a world:

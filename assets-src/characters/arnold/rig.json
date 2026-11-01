@@ -1,0 +1,138 @@
+{
+ "canvas": [
+  1024,
+  1024
+ ],
+ "png_scale": 2,
+ "note": "Full-canvas aligned parts; pivots in 1024px coords; draw order = file number.",
+ "bones": {
+  "pelvis": {
+   "pivot": [
+    512,
+    500
+   ],
+   "parent": null,
+   "part": "04_pelvis"
+  },
+  "torso": {
+   "pivot": [
+    512,
+    470
+   ],
+   "parent": "pelvis",
+   "part": "11_torso"
+  },
+  "neck": {
+   "pivot": [
+    512,
+    262
+   ],
+   "parent": "torso",
+   "part": "12_neck"
+  },
+  "head": {
+   "pivot": [
+    512,
+    240
+   ],
+   "parent": "neck",
+   "part": "13_head"
+  },
+  "thigh_far": {
+   "pivot": [
+    490,
+    515
+   ],
+   "parent": "pelvis",
+   "part": "03_thigh_far"
+  },
+  "shin_far": {
+   "pivot": [
+    480,
+    675
+   ],
+   "parent": "thigh_far",
+   "part": "02_shin_far"
+  },
+  "foot_far": {
+   "pivot": [
+    476,
+    830
+   ],
+   "parent": "shin_far",
+   "part": "01_foot_far"
+  },
+  "thigh_near": {
+   "pivot": [
+    536,
+    515
+   ],
+   "parent": "pelvis",
+   "part": "07_thigh_near"
+  },
+  "shin_near": {
+   "pivot": [
+    546,
+    675
+   ],
+   "parent": "thigh_near",
+   "part": "06_shin_near"
+  },
+  "foot_near": {
+   "pivot": [
+    552,
+    830
+   ],
+   "parent": "shin_near",
+   "part": "05_foot_near"
+  },
+  "upperarm_far": {
+   "pivot": [
+    478,
+    292
+   ],
+   "parent": "torso",
+   "part": "08_upperarm_far"
+  },
+  "forearm_far": {
+   "pivot": [
+    440,
+    400
+   ],
+   "parent": "upperarm_far",
+   "part": "09_forearm_far"
+  },
+  "hand_far": {
+   "pivot": [
+    428,
+    505
+   ],
+   "parent": "forearm_far",
+   "part": "10_hand_far"
+  },
+  "upperarm_near": {
+   "pivot": [
+    548,
+    292
+   ],
+   "parent": "torso",
+   "part": "14_upperarm_near"
+  },
+  "forearm_near": {
+   "pivot": [
+    586,
+    400
+   ],
+   "parent": "upperarm_near",
+   "part": "15_forearm_near"
+  },
+  "hand_near": {
+   "pivot": [
+    598,
+    505
+   ],
+   "parent": "forearm_near",
+   "part": "16_hand_near"
+  }
+ }
+}
