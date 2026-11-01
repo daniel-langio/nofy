@@ -8,6 +8,9 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 public class CharacterCatalog {
+  /** Canvas units per body-frame unit the character art was exported at. */
+  private float canvasScale = 1f;
+
   private HashMap<String, CharacterBuild> characters;
   private HashMap<String, float[]> adultLengths;
   private HashMap<String, BindLimb> bindRig;

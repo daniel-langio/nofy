@@ -1,0 +1,8 @@
+{
+  "id": "cast-scene",
+  "entities": [
+    { "entityDefinitionId": "nori", "instanceName": "Nori", "x": 40, "y": 60 },
+    { "entityDefinitionId": "bastien", "instanceName": "Bastien", "x": 90, "y": 60 },
+    { "entityDefinitionId": "eric", "instanceName": "Eric", "x": 140, "y": 60 }
+  ]
+}

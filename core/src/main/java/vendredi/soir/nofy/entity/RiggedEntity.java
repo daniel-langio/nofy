@@ -16,6 +16,7 @@ import java.util.Set;
 import java.util.function.Function;
 import lombok.Getter;
 import lombok.Setter;
+import vendredi.soir.nofy.character.ClipAnimator;
 import vendredi.soir.nofy.data.ActionRule;
 import vendredi.soir.nofy.data.BoneDefinition;
 import vendredi.soir.nofy.data.RigDefinition;
@@ -49,10 +50,16 @@ public class RiggedEntity implements Entity {
 
   private float x = 0f;
   private float y = 0f;
+  private final float scale;
+  private float rootOffsetX = 0f;
+  private float rootOffsetY = 0f;
   private String currentActionId;
 
   /** Mirrors the character horizontally, so it can face either way without a second set of art. */
   @Setter private boolean flipped = false;
+
+  /** Drives bone rotations from character kit clips; null for rigs posed by hand. */
+  @Setter private ClipAnimator clipAnimator;
 
   @Setter private List<ActionRule> actionRules = List.of();
   @Setter private boolean solid = false;
@@ -76,7 +83,7 @@ public class RiggedEntity implements Entity {
 
     // The one canvas-to-world conversion. The character's opaque extent, not the canvas, is what
     // targetHeight measures - the canvas is mostly empty space.
-    float scale = targetHeight / rig.getFigureHeight();
+    this.scale = targetHeight / rig.getFigureHeight();
     this.width = rig.getFigureWidth() * scale;
     this.height = targetHeight;
 
@@ -93,6 +100,15 @@ public class RiggedEntity implements Entity {
     bone(boneId).setRotation(degrees);
   }
 
+  /**
+   * Shifts the whole rig from where it is placed, in canvas units (y down) - the same units as the
+   * rig - so poses can move and re-ground the character without knowing the entity's scale.
+   */
+  public void setRootOffset(float canvasDx, float canvasDy) {
+    this.rootOffsetX = canvasDx * scale;
+    this.rootOffsetY = -canvasDy * scale;
+  }
+
   public Bone bone(String boneId) {
     Bone bone = bonesById.get(boneId);
     if (bone == null) {
@@ -103,6 +119,9 @@ public class RiggedEntity implements Entity {
 
   @Override
   public void animate(float deltaTime) {
+    if (clipAnimator != null) {
+      clipAnimator.update(this, deltaTime);
+    }
     updateBones();
   }
 
@@ -143,12 +162,15 @@ public class RiggedEntity implements Entity {
   }
 
   /**
-   * Records the requested action. Nothing consumes it yet - a rigged character plays keyframed
-   * clips rather than flipbooks, and clips are not implemented.
+   * Records the requested action, and starts the character kit clip of the same name if there is
+   * one. Actions without a clip leave the current pose as it is.
    */
   @Override
   public void play(String actionId) {
     this.currentActionId = actionId;
+    if (clipAnimator != null) {
+      clipAnimator.play(actionId);
+    }
   }
 
   @Override
@@ -159,7 +181,7 @@ public class RiggedEntity implements Entity {
   }
 
   private void updateBones() {
-    bones.forEach(bone -> bone.update(x, y));
+    bones.forEach(bone -> bone.update(x + rootOffsetX, y + rootOffsetY));
 
     if (flipped) {
       // Mirror only once the whole chain is resolved: every bone reflects across the character's

@@ -1,0 +1,138 @@
+{
+  "canvas": [
+    1024,
+    1024
+  ],
+  "png_scale": 2,
+  "note": "Nori: I-pose bind pose, exported by tools/character-kit/export.js.",
+  "bones": {
+    "foot_far": {
+      "pivot": [
+        478.7,
+        919.7
+      ],
+      "parent": "shin_far",
+      "part": "01_foot_far"
+    },
+    "shin_far": {
+      "pivot": [
+        478.7,
+        734.1
+      ],
+      "parent": "thigh_far",
+      "part": "02_shin_far"
+    },
+    "thigh_far": {
+      "pivot": [
+        478.7,
+        596.4
+      ],
+      "parent": "pelvis",
+      "part": "03_thigh_far"
+    },
+    "pelvis": {
+      "pivot": [
+        512,
+        579
+      ],
+      "parent": null,
+      "part": "04_pelvis"
+    },
+    "foot_near": {
+      "pivot": [
+        545.4,
+        919.7
+      ],
+      "parent": "shin_near",
+      "part": "05_foot_near"
+    },
+    "shin_near": {
+      "pivot": [
+        545.4,
+        734.1
+      ],
+      "parent": "thigh_near",
+      "part": "06_shin_near"
+    },
+    "thigh_near": {
+      "pivot": [
+        545.4,
+        596.4
+      ],
+      "parent": "pelvis",
+      "part": "07_thigh_near"
+    },
+    "upperarm_far": {
+      "pivot": [
+        464.2,
+        429.6
+      ],
+      "parent": "torso",
+      "part": "08_upperarm_far"
+    },
+    "forearm_far": {
+      "pivot": [
+        464.2,
+        522.4
+      ],
+      "parent": "upperarm_far",
+      "part": "09_forearm_far"
+    },
+    "hand_far": {
+      "pivot": [
+        464.2,
+        623.9
+      ],
+      "parent": "forearm_far",
+      "part": "10_hand_far"
+    },
+    "torso": {
+      "pivot": [
+        512,
+        579
+      ],
+      "parent": "pelvis",
+      "part": "11_torso"
+    },
+    "neck": {
+      "pivot": [
+        512,
+        387.6
+      ],
+      "parent": "torso",
+      "part": "12_neck"
+    },
+    "head": {
+      "pivot": [
+        512,
+        387.6
+      ],
+      "parent": "neck",
+      "part": "13_head"
+    },
+    "upperarm_near": {
+      "pivot": [
+        559.8,
+        429.6
+      ],
+      "parent": "torso",
+      "part": "14_upperarm_near"
+    },
+    "forearm_near": {
+      "pivot": [
+        559.8,
+        522.4
+      ],
+      "parent": "upperarm_near",
+      "part": "15_forearm_near"
+    },
+    "hand_near": {
+      "pivot": [
+        559.8,
+        623.9
+      ],
+      "parent": "forearm_near",
+      "part": "16_hand_near"
+    }
+  }
+}

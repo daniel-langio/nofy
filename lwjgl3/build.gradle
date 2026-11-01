@@ -68,6 +68,14 @@ tasks.register('runArnold', JavaExec) {
   if (os.contains('mac')) jvmArgs += "-XstartOnFirstThread"
 }
 
+tasks.register('runCast', JavaExec) {
+  group = 'application'
+  mainClass.set('vendredi.soir.nofy.lwjgl3.demo.cast.CastLauncher')
+  classpath = sourceSets.test.runtimeClasspath
+  workingDir = rootProject.file('assets').path
+  if (os.contains('mac')) jvmArgs += "-XstartOnFirstThread"
+}
+
 tasks.register('runArnoldWalk', JavaExec) {
   group = 'application'
   mainClass.set('vendredi.soir.nofy.lwjgl3.demo.arnoldwalk.ArnoldWalkLauncher')

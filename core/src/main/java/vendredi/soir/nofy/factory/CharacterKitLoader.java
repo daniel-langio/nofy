@@ -17,7 +17,17 @@ import vendredi.soir.nofy.data.RigManifest;
 public final class CharacterKitLoader {
   private static final String DIR = "data/character-kit";
 
+  private static CharacterKit shared;
+
   private CharacterKitLoader() {}
+
+  /** The packaged kit, loaded once and shared by every character that uses it. */
+  public static synchronized CharacterKit shared() {
+    if (shared == null) {
+      shared = loadInternal();
+    }
+    return shared;
+  }
 
   /** Loads from the packaged assets; needs Gdx initialised. */
   public static CharacterKit loadInternal() {

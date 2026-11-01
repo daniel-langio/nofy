@@ -15,5 +15,8 @@ public class EntityDefinition {
   /** When set, this entity is built from the named rig instead of sprite-sheet animations. */
   private String rigId;
 
+  /** When set on a rigged entity, it is posed and animated from this character kit build. */
+  private String characterId;
+
   private List<AnimationBinding> animations;
 }
