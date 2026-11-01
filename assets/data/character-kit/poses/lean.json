@@ -1,0 +1,42 @@
+{
+  "name": "Lean, hand on thigh",
+  "look": "camera",
+  "expr": "pout",
+  "root": {
+    "x": 0,
+    "y": 16,
+    "rot": 0
+  },
+  "spine": -22,
+  "neck": -10,
+  "legL": {
+    "a": -24,
+    "b": 3,
+    "foot": -6
+  },
+  "legR": {
+    "a": 24,
+    "b": -3,
+    "foot": 6
+  },
+  "armL": {
+    "t": [
+      107,
+      377
+    ],
+    "frame": "body",
+    "bend": 1,
+    "hand": "open",
+    "layer": "front"
+  },
+  "armR": {
+    "t": [
+      184,
+      347
+    ],
+    "frame": "body",
+    "bend": -1,
+    "hand": "hidden",
+    "layer": "front"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "facing": "left",
+  "look": "ahead",
+  "expr": "calm",
+  "root": {
+    "x": 0,
+    "y": 0,
+    "rot": 0
+  },
+  "spine": 0,
+  "neck": 0,
+  "seat": "none",
+  "armL": {
+    "a": -12,
+    "b": -8,
+    "s1": 1,
+    "s2": 1,
+    "hand": "relaxed",
+    "layer": "back"
+  },
+  "armR": {
+    "a": 10,
+    "b": -12,
+    "s1": 1,
+    "s2": 1,
+    "hand": "relaxed",
+    "layer": "front"
+  },
+  "legL": {
+    "a": -2,
+    "b": 1,
+    "s1": 1,
+    "s2": 1,
+    "foot": 0,
+    "layer": "back"
+  },
+  "legR": {
+    "a": 3,
+    "b": -1,
+    "s1": 1,
+    "s2": 1,
+    "foot": 0,
+    "layer": "back"
+  }
+}

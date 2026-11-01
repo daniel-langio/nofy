@@ -1,0 +1,72 @@
+{
+  "name": "Laugh on the steps",
+  "look": "camera",
+  "expr": "laugh",
+  "seat": "step",
+  "root": {
+    "x": 10,
+    "y": 22,
+    "rot": 0
+  },
+  "spine": 5,
+  "neck": 9,
+  "legL": {
+    "a": 105.6,
+    "b": -108.6,
+    "s1": 0.7,
+    "s2": 1,
+    "foot": 0,
+    "bend": 1
+  },
+  "legR": {
+    "a": -105.6,
+    "b": 108.6,
+    "s1": 0.9,
+    "s2": 1,
+    "foot": 0,
+    "layer": "front"
+  },
+  "armL": {
+    "t": [
+      152,
+      238
+    ],
+    "bend": -1,
+    "hand": "relaxed",
+    "layer": "front",
+    "wrist": -20,
+    "fingers": {
+      "spread": 9,
+      "curl": [
+        0.5,
+        0.58,
+        0.64,
+        0.7
+      ],
+      "thumb": 36,
+      "tcurl": 0.3
+    }
+  },
+  "armR": {
+    "t": [
+      86,
+      312
+    ],
+    "frame": "body",
+    "bend": 1,
+    "hand": "relaxed",
+    "layer": "front",
+    "wrist": 10,
+    "fingers": {
+      "spread": 8,
+      "curl": [
+        0.3,
+        0.38,
+        0.45,
+        0.5
+      ],
+      "thumb": 24,
+      "tcurl": 0.2
+    }
+  }
+}

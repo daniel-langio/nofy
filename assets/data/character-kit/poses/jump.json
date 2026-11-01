@@ -1,0 +1,35 @@
+{
+  "name": "Jump",
+  "look": "camera",
+  "expr": "joy",
+  "root": {
+    "x": 0,
+    "y": -110,
+    "rot": 0
+  },
+  "spine": 6,
+  "neck": -4,
+  "legL": {
+    "a": -14,
+    "b": 118,
+    "foot": -10
+  },
+  "legR": {
+    "a": 2,
+    "b": 112,
+    "foot": -10
+  },
+  "armL": {
+    "a": -158,
+    "b": -6,
+    "hand": "open",
+    "layer": "back"
+  },
+  "armR": {
+    "a": 114,
+    "b": 8,
+    "bend": -1,
+    "hand": "wave",
+    "layer": "front"
+  }
+}

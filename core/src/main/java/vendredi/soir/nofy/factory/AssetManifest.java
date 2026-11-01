@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * FileHandle.list() only enumerates real directory entries; it comes back empty for internal
- * assets bundled inside a packaged jar. assets.txt (generated at build time, listing every file
- * under assets/) is what lets directory-style lookups keep working once loaded from a jar.
+ * FileHandle.list() only enumerates real directory entries; it comes back empty for internal assets
+ * bundled inside a packaged jar. assets.txt (generated at build time, listing every file under
+ * assets/) is what lets directory-style lookups keep working once loaded from a jar.
  */
 final class AssetManifest {
   private AssetManifest() {}

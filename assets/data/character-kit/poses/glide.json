@@ -1,0 +1,35 @@
+{
+  "name": "Glide",
+  "look": "camera",
+  "expr": "calm",
+  "root": {
+    "x": 20,
+    "y": -150,
+    "rot": -78
+  },
+  "spine": 0,
+  "neck": 44,
+  "legL": {
+    "a": 4,
+    "b": -2,
+    "foot": -50
+  },
+  "legR": {
+    "a": -12,
+    "b": 72,
+    "foot": -30
+  },
+  "armL": {
+    "a": -6,
+    "b": -6,
+    "hand": "open",
+    "layer": "back"
+  },
+  "armR": {
+    "a": 172,
+    "b": 4,
+    "bend": -1,
+    "hand": "open",
+    "layer": "front"
+  }
+}
