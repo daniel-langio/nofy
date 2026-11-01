@@ -97,6 +97,11 @@ public class CharacterRig {
     double a = at + l.bend * al;
     while (a > 180) a -= 360;
     while (a < -180) a += 360;
+    double out = Math.hypot(vx, vy) - l1 - l2;
+    if (out > 1) {
+      p.warnings.add(
+          ResolvedPose.LIMB_NAMES[i] + ": target is " + Math.round(out) + "px out of reach");
+    }
     l.a = (float) a;
     l.b = (float) (-l.bend * (180 - ga));
   }
