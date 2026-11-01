@@ -1,8 +1,6 @@
 package vendredi.soir.nofy.data;
 
-/**
- * Closed, engine-level vocabulary - a new type needs new evaluation code in TriggerSystem anyway.
- */
+/** Closed, engine-level vocabulary - a new type needs new evaluation code in TriggerSystem anyway. */
 public enum TriggerType {
   PROXIMITY,
   CLICK,

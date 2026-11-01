@@ -9,9 +9,9 @@ public final class VideoExportConfigLoader {
   private VideoExportConfigLoader() {}
 
   /**
-   * Reads a plain filesystem path, not a Gdx internal asset path: this is called before the libGDX
-   * application (and thus Gdx.files) exists, since the resulting width/height are needed to
-   * configure the application window itself.
+   * Reads a plain filesystem path, not a Gdx internal asset path: this is called before the
+   * libGDX application (and thus Gdx.files) exists, since the resulting width/height are needed
+   * to configure the application window itself.
    */
   public static VideoExportConfig load(String configFilePath) {
     try (Reader reader = new FileReader(configFilePath)) {
