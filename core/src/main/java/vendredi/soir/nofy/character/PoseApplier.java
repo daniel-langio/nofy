@@ -2,6 +2,7 @@ package vendredi.soir.nofy.character;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import vendredi.soir.nofy.entity.RiggedEntity;
 
 /**
  * Turns a resolved pose into Nofy bone rotations (degrees, counter-clockwise, relative to the
@@ -10,6 +11,18 @@ import java.util.Map;
  */
 public final class PoseApplier {
   private PoseApplier() {}
+
+  /**
+   * Poses the entity: bone rotations, facing, and the root offset that places it on its contact.
+   */
+  public static void apply(RiggedEntity entity, CharacterRig rig, ResolvedPose p) {
+    rotations(p).forEach(entity::setBoneRotation);
+    entity.setFlipped("right".equals(p.facing));
+    // Body-frame units, y down; the character scale was applied to the art, not to root.x/y.
+    float dx = p.rootX * rig.scale() * rig.canvasScale();
+    float dy = (p.rootY * rig.scale() + rig.placement(p)) * rig.canvasScale();
+    entity.setRootOffset(dx, dy);
+  }
 
   public static Map<String, Float> rotations(ResolvedPose p) {
     Map<String, Float> r = new LinkedHashMap<>();

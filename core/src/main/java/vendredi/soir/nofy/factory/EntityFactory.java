@@ -3,6 +3,7 @@ package vendredi.soir.nofy.factory;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import java.util.List;
 import java.util.Map;
+import vendredi.soir.nofy.character.ClipAnimator;
 import vendredi.soir.nofy.data.ActionDefinition;
 import vendredi.soir.nofy.data.AnimationBinding;
 import vendredi.soir.nofy.data.EntityDefinition;
@@ -27,7 +28,7 @@ public final class EntityFactory {
         initialActionId != null ? initialActionId : definition.getDefaultActionId();
 
     if (definition.getRigId() != null) {
-      return createRigged(definition, rigs, name, defaultActionId);
+      return createRigged(definition, rigs, actions, name, defaultActionId);
     }
 
     List<SpriteAnimation> spriteAnimations =
@@ -43,6 +44,7 @@ public final class EntityFactory {
   private static RiggedEntity createRigged(
       EntityDefinition definition,
       Map<String, RigDefinition> rigs,
+      Map<String, ActionDefinition> actions,
       String name,
       String defaultActionId) {
     RigDefinition rig = rigs.get(definition.getRigId());
@@ -55,8 +57,17 @@ public final class EntityFactory {
 
     // A rig is scaled to the entity's height; its width follows from the character's proportions,
     // so definition.getWidth() is not used here.
-    return new RiggedEntity(
-        name, rig, definition.getHeight(), defaultActionId, SpriteLoader::loadRegion);
+    RiggedEntity entity =
+        new RiggedEntity(
+            name, rig, definition.getHeight(), defaultActionId, SpriteLoader::loadRegion);
+    if (definition.getCharacterId() != null) {
+      ClipAnimator animator =
+          new ClipAnimator(CharacterKitLoader.shared(), definition.getCharacterId(), actions);
+      animator.showPose(entity, "stand");
+      entity.setClipAnimator(animator);
+      entity.play(defaultActionId);
+    }
+    return entity;
   }
 
   private static SpriteAnimation toSpriteAnimation(

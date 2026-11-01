@@ -8,6 +8,7 @@ Interactive previews live under `lwjgl3/src/test/java/.../lwjgl3/demo/<scenario>
 | paddle-control | `./gradlew lwjgl3:runPaddleControl` | mouse-dragged paddle (`HOVER` + `followTrigger`) deflecting a ball via `CollisionSystem` |
 | arnold | `./gradlew lwjgl3:runArnold` | the rig-based character standing in his bind pose, one shoulder swinging (see [Rigged characters](rigged-characters.md)) |
 | arnold-walk | `./gradlew lwjgl3:runArnoldWalk` | Arnold walking under keyboard control — left/right arrows or A/D, facing the way he goes |
+| cast | `./gradlew lwjgl3:runCast` | Nori, Bastien and Eric: keys 1-0 hold a library pose, H plays `hop-and-wave`, F flips facing |
 
 ## Adding a new demo
 

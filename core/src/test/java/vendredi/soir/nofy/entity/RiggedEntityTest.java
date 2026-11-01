@@ -92,6 +92,18 @@ class RiggedEntityTest {
   }
 
   @Test
+  void rootOffset_movesTheWholeRigInCanvasUnits_yDown() {
+    RiggedEntity entity = entity(FIGURE_HEIGHT);
+
+    // Scale is exactly 1 here: 10 right, and 30 down on the canvas is 30 lower in the world.
+    entity.setRootOffset(10f, 30f);
+    entity.animate(0f);
+
+    assertBoneAt(entity, "root", 60f, 70f);
+    assertBoneAt(entity, "foot", 60f, -10f);
+  }
+
+  @Test
   void flipping_reflectsTheRigAboutTheCharactersOwnCentre() {
     RiggedEntity upright = posed(false);
     RiggedEntity mirrored = posed(true);

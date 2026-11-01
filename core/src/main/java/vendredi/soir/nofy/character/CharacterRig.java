@@ -36,6 +36,11 @@ public class CharacterRig {
     lengths[ResolvedPose.LEG_R] = build.getLeg();
   }
 
+  /** Canvas units per body-frame unit, for turning pose offsets into rig offsets. */
+  public float canvasScale() {
+    return kit.getCatalog().getCanvasScale();
+  }
+
   public float scale() {
     return build.getScale();
   }
