@@ -27,7 +27,7 @@ jobs:
 
       - name: Render ball-bounce scene to video
         run: |
-          xvfb-run -a java -jar lwjgl3/build/libs/Nofy-video-export-1.0.0.jar assets/data/video/ball-bounce.json
+          xvfb-run -a java -jar lwjgl3/build/libs/Nofy-video-export-*.jar assets/data/video/ball-bounce.json
 
       - uses: actions/upload-artifact@v4
         with:
@@ -37,7 +37,7 @@ jobs:
 
       - name: Render two-balls-collide scene to video
         run: |
-          xvfb-run -a java -jar lwjgl3/build/libs/Nofy-video-export-1.0.0.jar assets/data/video/two-balls-collide.json
+          xvfb-run -a java -jar lwjgl3/build/libs/Nofy-video-export-*.jar assets/data/video/two-balls-collide.json
 
       - uses: actions/upload-artifact@v4
         with:
@@ -47,7 +47,7 @@ jobs:
 
       - name: Render Eric walking to video
         run: |
-          xvfb-run -a java -jar lwjgl3/build/libs/Nofy-video-export-1.0.0.jar assets/data/video/eric-walk.json
+          xvfb-run -a java -jar lwjgl3/build/libs/Nofy-video-export-*.jar assets/data/video/eric-walk.json
 
       - uses: actions/upload-artifact@v4
         with:
