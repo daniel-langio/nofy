@@ -1,0 +1,24 @@
+{
+  "id": "walk",
+  "fps": 30,
+  "startFrame": 0,
+  "endFrame": 32,
+  "rigVersion": "humanoid-v3",
+  "keys": [
+    {
+      "frame": 0,
+      "pose": "walk"
+    },
+    {
+      "frame": 16,
+      "pose": "walk2",
+      "ease": "inOut"
+    },
+    {
+      "frame": 32,
+      "pose": "walk",
+      "ease": "inOut"
+    }
+  ],
+  "tracks": {}
+}

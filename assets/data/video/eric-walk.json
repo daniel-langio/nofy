@@ -1,0 +1,11 @@
+{
+  "actionsDir": "data/actions",
+  "entitiesDir": "data/entities",
+  "rigsDir": "data/rigs",
+  "sceneFile": "data/scenes/eric-walk-scene.json",
+  "outputPath": "output/eric-walk.mp4",
+  "fps": 30,
+  "durationSeconds": 5,
+  "width": 600,
+  "height": 600
+}
