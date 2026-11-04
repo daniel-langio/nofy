@@ -21,6 +21,7 @@ public class ClipAnimator {
   private float elapsed;
   private ResolvedPose held;
   private boolean mirrored;
+  private float vx;
 
   public ClipAnimator(CharacterKit kit, String characterId, Map<String, ActionDefinition> actions) {
     this.kit = kit;
@@ -36,6 +37,7 @@ public class ClipAnimator {
     player = new ClipPlayer(rig, next);
     ActionDefinition action = actions.get(actionId);
     loop = action == null || action.isLoop();
+    vx = action == null ? 0f : action.getVx();
     elapsed = 0f;
   }
 
@@ -58,6 +60,7 @@ public class ClipAnimator {
       return;
     }
     elapsed += deltaTime;
+    entity.translate(vx * deltaTime, 0f);
     float length = (clip.getEndFrame() - clip.getStartFrame()) / clip.getFps();
     if (loop && length > 0) {
       elapsed %= length;

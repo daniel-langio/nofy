@@ -2,10 +2,10 @@
   "id": "eric-walk-scene",
   "entities": [
     {
-      "entityDefinitionId": "eric",
+      "entityDefinitionId": "eric-walker",
       "instanceName": "Eric",
-      "x": 30,
-      "y": 60,
+      "x": 10,
+      "y": 100,
       "initialActionId": "walk"
     }
   ]
