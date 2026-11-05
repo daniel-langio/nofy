@@ -1,0 +1,27 @@
+{
+  "name": "Walk pass b",
+  "facing": "right",
+  "look": "ahead",
+  "expr": "calm",
+  "spine": -3,
+  "legL": {
+    "a": -12,
+    "b": 58,
+    "foot": 0
+  },
+  "legR": {
+    "a": 0,
+    "b": 2,
+    "foot": 0
+  },
+  "armL": {
+    "a": -2,
+    "b": -14,
+    "hand": "relaxed"
+  },
+  "armR": {
+    "a": 0,
+    "b": -10,
+    "hand": "relaxed"
+  }
+}

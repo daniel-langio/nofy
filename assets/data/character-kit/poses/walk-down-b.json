@@ -1,0 +1,27 @@
+{
+  "name": "Walk down b",
+  "facing": "right",
+  "look": "ahead",
+  "expr": "calm",
+  "spine": -3,
+  "legL": {
+    "a": 14,
+    "b": 42,
+    "foot": 10
+  },
+  "legR": {
+    "a": -18,
+    "b": 6,
+    "foot": 0
+  },
+  "armL": {
+    "a": -16,
+    "b": -22,
+    "hand": "relaxed"
+  },
+  "armR": {
+    "a": 12,
+    "b": -8,
+    "hand": "relaxed"
+  }
+}

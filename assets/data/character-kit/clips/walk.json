@@ -7,17 +7,48 @@
   "keys": [
     {
       "frame": 0,
-      "pose": "walk"
+      "pose": "walk-contact-a",
+      "ease": "linear"
+    },
+    {
+      "frame": 4,
+      "pose": "walk-down-a",
+      "ease": "linear"
+    },
+    {
+      "frame": 8,
+      "pose": "walk-pass-a",
+      "ease": "linear"
+    },
+    {
+      "frame": 12,
+      "pose": "walk-up-a",
+      "ease": "linear"
     },
     {
       "frame": 16,
-      "pose": "walk2",
-      "ease": "inOut"
+      "pose": "walk-contact-b",
+      "ease": "linear"
+    },
+    {
+      "frame": 20,
+      "pose": "walk-down-b",
+      "ease": "linear"
+    },
+    {
+      "frame": 24,
+      "pose": "walk-pass-b",
+      "ease": "linear"
+    },
+    {
+      "frame": 28,
+      "pose": "walk-up-b",
+      "ease": "linear"
     },
     {
       "frame": 32,
-      "pose": "walk",
-      "ease": "inOut"
+      "pose": "walk-contact-a",
+      "ease": "linear"
     }
   ],
   "tracks": {}

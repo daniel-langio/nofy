@@ -1,0 +1,27 @@
+{
+  "name": "Walk contact b",
+  "facing": "right",
+  "look": "ahead",
+  "expr": "calm",
+  "spine": -3,
+  "legL": {
+    "a": 22,
+    "b": 8,
+    "foot": 22
+  },
+  "legR": {
+    "a": -28,
+    "b": 3,
+    "foot": -6
+  },
+  "armL": {
+    "a": -24,
+    "b": -30,
+    "hand": "relaxed"
+  },
+  "armR": {
+    "a": 20,
+    "b": -6,
+    "hand": "relaxed"
+  }
+}
